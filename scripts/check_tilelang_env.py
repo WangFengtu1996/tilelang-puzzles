@@ -1,9 +1,11 @@
 import torch
-
+import os
+import sys
 import tilelang
 import tilelang.language as T
 from tilelang.env import env
 
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from common.utils import rand_torch_tensor
 
 
